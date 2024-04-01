@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+}
+.title {
+  width: 864px;
+  height: 268px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.firstH {
+  font-size: 36px;
+  font-weight: 275;
+  line-height: 5.4rem;
+}
+.secondH {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 5rem;
+}
+.firstP {
+  font-size: 15px;
+  line-height: 5.4rem;
+}
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px 10px;
+  grid-template-rows: repeat(4, 1fr);
+}
+.first-card {
+  width: 35rem;
+  height: 25rem;
+  background-color: white;
+  border-top: 4px solid #00c8c8;
+  border-radius: 1rem;
+  grid-column: 1;
+  grid-row: 2/4;
+  margin-right: 30px;
+}
+.first-card h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.first-card p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+}
+.first-card img {
+  margin: 6rem 3.2rem 3.2rem 25.4rem;
+}
+.second-card {
+  width: 35rem;
+
+  border-top: 4px solid #ff637b;
+  border-radius: 1rem;
+  background-color: white;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.second-card h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.second-card p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  width: 28.6rem;
+}
+.second-card img {
+  margin: 5rem 3.2rem 3.2rem 25.4rem;
+}
+
+.third-card {
+  width: 35rem;
+  border-top: 4px solid #ff9100;
+  border-radius: 1rem;
+  background-color: white;
+  grid-column: 3;
+  grid-row: 2/4;
+  margin-left: 30px;
+}
+.third-card h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.third-card p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  width: 28.6rem;
+}
+.third-card img {
+  margin: 5rem 3.2rem 3.2rem 25.4rem;
+}
+.fourth-card {
+  width: 35rem;
+  border-top: 4px solid #377fd2;
+  border-radius: 1rem;
+  background-color: white;
+  grid-column: 2;
+  grid-row: 3 / span 2;
+}
+.fourth-card h5 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 0.6rem;
+}
+.fourth-card p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: #4d4f62;
+  margin-left: 3.2rem;
+  width: 28.6rem;
+}
+.fourth-card img {
+  margin: 5rem 3.2rem 3.2rem 25.4rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .first-card,
+  .second-card,
+  .third-card,
+  .fourth-card {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
